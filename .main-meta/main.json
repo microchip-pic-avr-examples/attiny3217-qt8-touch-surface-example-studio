@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.attiny3217-qt8-touch-surface-example-studio",
-        "version": "",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Touch Surface example using QT8 and ATTiny3217",
         "projectName": "attiny3217-qt8-touch-surface-example-studio",
-        "shortDescription": "",
+        "shortDescription": "This example demonstrates the touch application on ATtiny3217 XPRO with QT8 surface Extension board. ",
         "ide": {
             "name": "STUDIO",
-            "semverRange": ""
+            "semverRange": ">=7.0.2542"
         },
         "compiler": [
-			{
-				"name": "",
-				"semverRange": ""
-			}
+            {
+                "name": "AVR-GCC",
+                "semverRange": "^5.4.0"
+            }
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATtiny_DFP",
+            "semverRange": "1.8.332"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.8.491"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,16 +32,51 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATtiny3217",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Sean Conlon",
         "subcategories": [
+            "START",
+            "Touch",
+            [
+                "Peripherals",
+                "RTC"
+            ],
+            [
+                "Peripherals",
+                "I2C"
+            ],
+            [
+                "Peripherals",
+                "TWI"
+            ],
+            [
+                "Peripherals",
+                "USART"
+            ],
+            [
+                "Peripherals",
+                "PTC"
+            ]
         ],
-        "peripherals": [
+        "peripherals": 
+        [ 
+            "RTC", "I2C", "UART", "TWI", "USART", "PTC"
         ],
         "keywords": [
+            "Capacitive touch sensing",
+            "QTouch",
+            "Surface",
+            "Gesture",
+            "Human Interface",
+            "Sensor",
+            "Sensors",
+            "Touch",
+            "Touch sensing",
+            "QTouch",
+            "PTC"
         ],
 		"additionalData": {
 			"longDescription": {

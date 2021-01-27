@@ -1,41 +1,51 @@
-<!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Update the title for attiny3217-qt8-touch-surface-example-studio here
+# Touch Surface Example using QT8 and ATtiny3217 Xplained Pro kit
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+This example demonstrates touch application on ATtiny3217 XPRO with QT8 surface extension board. The example project provides user feedback to touch either using the QT8 onboard LEDS, or via a PC running Microchip 2D Surface Utility via USB.
+
 
 ## Related Documentation
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
+- ATtiny3217 Xplainedpro kit user guide [(DS50002765A)](https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3217-Xplained-Pro-DS50002765A.pdf)
+- 2D Surface Utility guide [(Microchipdeveloper)](https://microchipdeveloper.com/touch:guide-to-connect-to-touch-surface-utility)
 
 ## Software Used
-
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
-
+  
+- Microchip Studio 7 7.0.2542 or later [(microchip-studio-for-avr-and-sam-devices)](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
+- AVR-GCC 3.62 or newer toolchain [(Toolchains for AVR)](https://www.microchip.com/en-us/development-tools-tools-and-software/gcc-compilers-avr-and-arm)
+- ATtiny_DFP (1.8.322) or later [(packs.download.microchip.com)](https://packs.download.microchip.com/)
+- 2D Surface Utility [(2D Touch Surface GUI)](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en605897)
+  
 ## Hardware Used
 
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
+- ATtiny3217 Xplained Pro [(ATTINY3217-XPRO)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATTINY3217-XPRO)
+- QT8 Xplained Pro Extension Kit [(AC164161)](https://www.microchip.com/developmenttools/ProductDetails/AC164161)
+
+<!-- [![MCHP](images/microchip.png)](https://www.microchip.com) -->
+[![tiny](images/attiny3217.png)]
 
 ## Setup
 
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+1. Remove R303 from the ATtiny3217 Xplained Pro, located beside USER LED0 (see above).
+2. Connect the QT8 to ATtiny3217 Xplained Pro kit Extension Header 1.
+3. Connect PC to the MCU board Debug USB port. 
 
 ## Operation
 
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+1. Open the .atsln file in Microchip Studio.
+2. Build the solution and program the device.
+3. By default, UART communication is enabled to send data to Microchip Surface Utility (KRONOCOMM_UART macro in touch.h file is 1u)
+4. Open Microchip 2D Touch Surface Utility and select UART with 38400 baud rate and click OK.
+5. Surface status will be displayed on the utility.
+6. To enable LED status:
+   - Disable the UART communication by defining KRONOCOMM_UART macro as 0u in touch.h file
+   - Enable LED driver by defining ENABLE_LED macro to 1u in led_driver.c file
+7. Close the 2D Surface Utility.
+8. Rebuild and program the target.    
+    NOTE: Either LED or Kronocomm should be enabled, not both simultaneously. Running both will cause 2D utility debug data transmission to be delayed.  as it 
+
 
 ## Summary
 
-<!-- Summarize what the example has shown -->
+This code example has illustrated how to use the ATtiny3217 XPRO with QT8 surface Extention board.

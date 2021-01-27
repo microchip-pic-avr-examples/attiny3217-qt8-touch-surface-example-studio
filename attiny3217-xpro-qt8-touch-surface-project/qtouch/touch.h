@@ -124,7 +124,7 @@ extern "C" {
 #define NODE_7_PARAMS                                                                                                  \
 	{                                                                                                                  \
 		Y(6) | Y(8) | Y(0) | Y(1) | Y(5) | Y(4) | Y(9) | Y(7) | Y(3) | Y(2), Y(13), 0, PRSC_DIV_SEL_8,                 \
-		    NODE_GAIN(GAIN_1, GAIN_4), FILTER_LEVEL_16                                                                 \
+		    NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_16                                                                 \
 	}
 #define NODE_8_PARAMS                                                                                                  \
 	{                                                                                                                  \
@@ -405,7 +405,7 @@ extern "C" {
 /**********************************************************/
 
 #define KRONOCOMM_UART 1u
-#define KRONOCOMM_ENABLE 0u
+#define KRONOCOMM_ENABLE 1u
 
 #define KRONO_GESTURE_ENABLE 1u
 
