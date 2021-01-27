@@ -48,4 +48,4 @@ This example demonstrates touch application on ATtiny3217 XPRO with QT8 surface 
 
 ## Summary
 
-This example has illustrated how to use the ATtiny3217 XPRO with QT8 surface Extension board.
+This example has illustrated how to use the ATtiny3217 XPRO with QT8 surface extension board.
