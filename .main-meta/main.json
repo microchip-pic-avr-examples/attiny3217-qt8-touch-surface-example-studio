@@ -41,24 +41,19 @@
             "START",
             "Touch",
             [
-                "Peripherals",
-                "RTC"
+                "Peripherals", "RTC"
             ],
             [
-                "Peripherals",
-                "I2C"
+                "Peripherals", "I2C"
             ],
             [
-                "Peripherals",
-                "TWI"
+                "Peripherals", "TWI"
             ],
             [
-                "Peripherals",
-                "USART"
+                "Peripherals", "USART"
             ],
             [
-                "Peripherals",
-                "PTC"
+                "Peripherals", "PTC"
             ]
         ],
         "peripherals": 
@@ -73,9 +68,7 @@
             "Human Interface",
             "Sensor",
             "Sensors",
-            "Touch",
             "Touch sensing",
-            "QTouch",
             "PTC"
         ],
 		"additionalData": {
