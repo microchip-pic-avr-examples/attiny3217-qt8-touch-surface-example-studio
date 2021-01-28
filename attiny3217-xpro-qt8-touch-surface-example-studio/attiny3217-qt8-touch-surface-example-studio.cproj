@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>ATtiny3217-Xpro-QT8-touch-surface-example-studio</AssemblyName>
+    <AssemblyName>attiny3217-xpro-qt8-touch-surface-example-studio</AssemblyName>
     <Name>attiny3217-qt8-touch-surface-example-studio</Name>
-    <RootNamespace>ATtiny3217-Xpro-QT8-touch-surface-example-studio</RootNamespace>
+    <RootNamespace>attiny3217-Xpro-QT8-touch-surface-example-studio</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
