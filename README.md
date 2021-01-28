@@ -22,7 +22,6 @@ This example demonstrates touch application on ATtiny3217 XPRO with QT8 surface 
 - ATtiny3217 Xplained Pro [(ATTINY3217-XPRO)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATTINY3217-XPRO)
 - QT8 Xplained Pro Extension Kit [(AC164161)](https://www.microchip.com/developmenttools/ProductDetails/AC164161)
 
-<!-- [![MCHP](images/microchip.png)](https://www.microchip.com) -->
 [![tiny](images/attiny3217.png)]
 
 ## Setup
