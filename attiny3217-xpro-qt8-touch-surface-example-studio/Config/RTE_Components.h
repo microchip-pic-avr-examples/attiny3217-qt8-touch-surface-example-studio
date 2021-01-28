@@ -39,7 +39,7 @@
  *
  * \acme_license_stop
  *
- * Project: ATtiny3217-Xpro-QT8-touch-surface-project
+ * Project: ATtiny3217-Xpro-QT8-touch-surface-example-studio
  * Target:  ATtiny3217 
  *
  **/

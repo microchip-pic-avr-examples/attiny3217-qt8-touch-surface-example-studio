@@ -1,5 +1,5 @@
 format_version: '2'
-name: ATtiny3217-Xpro-QT8-touch-surface-project
+name: ATtiny3217-Xpro-QT8-touch-surface-example-studio
 versions:
   api: '1.0'
   backend: 1.8.491
@@ -18,7 +18,7 @@ board:
   device: ATtiny3217-MFR
 details: null
 application:
-  definition: 'Atmel:QTOUCH_TINY_AVR:1.0.0::Application:ATtiny3217-Xpro-QT8-touch-surface-project:'
+  definition: 'Atmel:QTOUCH_TINY_AVR:1.0.0::Application:ATtiny3217-Xpro-QT8-touch-surface-example-studio:'
   configuration: null
 middlewares:
   QTOUCH_LIBRARY_0:
