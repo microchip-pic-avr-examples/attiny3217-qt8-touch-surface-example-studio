@@ -4,10 +4,10 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.attiny3217-qt8-touch-surface-example-studio",
-        "version": "1.0.0",
-        "displayName": "Touch Surface example using QT8 and ATTiny3217",
+        "version": "1.0.1",
+        "displayName": "Touchpad example using QT8 and ATTiny3217",
         "projectName": "attiny3217-qt8-touch-surface-example-studio",
-        "shortDescription": "This example demonstrates the touch application on ATtiny3217 XPRO with QT8 surface Extension board. ",
+        "shortDescription": "This example demonstrates touchpad application on ATtiny3217 XPRO with QT8 surface Extension board. ",
         "ide": {
             "name": "STUDIO",
             "semverRange": ">=7.0.2542"
@@ -69,7 +69,8 @@
             "Sensor",
             "Sensors",
             "Touch sensing",
-            "PTC"
+            "PTC",
+            "TouchPad"
         ],
 		"additionalData": {
 			"longDescription": {

@@ -1,6 +1,6 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Touch Surface Example using QT8 and ATtiny3217 Xplained Pro kit
+# TouchPad Example using QT8 and ATtiny3217 Xplained Pro kit
 
 This example demonstrates touch application on ATtiny3217 XPRO with QT8 surface extension board. The example project provides user feedback to touch either using the QT8 onboard LEDS, or via a PC running Microchip 2D Surface Utility via USB.
 
